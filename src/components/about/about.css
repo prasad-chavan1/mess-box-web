@@ -1,0 +1,80 @@
+
+.navbar_srtip {
+    width: 100vw;
+    background-color: #000;
+}
+.navbar_srtip p {
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+}
+.navbar_srtip p span {
+    color: orange;
+}
+
+.navbar {
+    padding: 10px 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .a_link {
+    width: 100px;
+}
+.navbar .navbar_items {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+}
+.navbar_items ul {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.navbar_items ul .ab_link {
+    color: black;
+}
+.navbar_items ul .nav_link:hover {
+    color: #f6cb00;
+}
+
+
+.about_content {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.about_content .about_img {
+    width: 50%;
+}
+.about_content .about_img img {
+    width: 70%;
+    margin-left: 6vw;
+}
+.about_content .about_info {
+    width: 28%;
+}
+
+.about_content .about_info span {
+    color: red;
+    font-size: 1.7rem;
+    font-weight: lighter;
+}
+.about_content .about_info h1 {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about_content .about_info p {
+    color: #000;
+    font-size: 14px;
+    text-align: justify;
+    line-height: 28px;
+}

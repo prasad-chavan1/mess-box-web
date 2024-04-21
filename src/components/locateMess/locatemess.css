@@ -1,0 +1,238 @@
+.navbar_srtip {
+    width: 100vw;
+    background-color: #000;
+}
+.navbar_srtip p {
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+}
+.navbar_srtip p span {
+    color: orange;
+}
+
+.navbar {
+    padding: 10px 1vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .a_link {
+    width: 70px;
+}
+.navbar .navbar_items {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+}
+.navbar_items ul {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.navbar_items ul .nav_link {
+    color: white;
+}
+.navbar_items ul .nav_link:hover {
+    color: #f6cb00;
+}
+
+
+
+
+/* main code */
+.locateMess_content .path {
+    padding: 1rem 0 2rem 2rem;
+}
+.locateMess_content .path .a_link {
+    color: black;
+    font-size: 1rem;
+}
+.locateMess_content .path .a_link.active {
+    color: rgb(255, 115, 72);
+}
+
+
+.mess_cards {
+    padding: 0vw 3vw 3vw 3vw;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 34px;
+}
+
+.mess_cards .card  {
+    background-color: rgb(255, 255, 255);
+    /* background: url("https://www.onlymess.in/_next/image?url=https%3A%2F%2Fonlymess.s3.ap-south-1.amazonaws.com%2Fimage_Tai_Mess_1710532308466.jpg&w=3840&q=75") no-repeat;
+    background-size: cover; */
+    color: rgba(0, 0, 0, 0.87);
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px, rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
+    overflow: hidden;
+    display: flex;
+    border-radius: 20px;
+    width: 45vw;
+    height: 55vh;
+}
+.card .mess_img {
+    width: 18%;
+    height: 40vh;
+}
+.card .mess_cards img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    inset: 0px;
+    object-fit: cover;
+    color: transparent;
+}
+
+
+.mess_info {
+    background: white;
+    padding-left: 30%;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 4 1 0%;
+}
+
+
+.card .css-1h7x2xc {
+    user-select: none;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    fill: currentcolor;
+    flex-shrink: 0;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-size: 1.5rem;
+    color: rgb(255, 167, 34);
+}
+
+.card .css-1f8zwqt {
+    user-select: none;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    fill: currentcolor;
+    flex-shrink: 0;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-size: 1.5rem;
+    color: rgb(91, 104, 118);
+}
+
+.card .mess_info .mess_name_open {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mess_name_open h1 {
+    font-size: 2rem;
+    font-weight: 550;
+}
+
+.mess_name_open p {
+    margin: 0px;
+    font-weight: bold;
+    line-height: 1.5;
+    color: darkgreen;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    font-size: .7rem;
+    gap: 3px;
+}
+.css-1jklwfs {
+    user-select: none;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    fill: currentcolor;
+    flex-shrink: 0;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-size: 8px;
+}
+
+.card .mess_area {
+    margin: 0px;
+    font-size: .9rem;
+    line-height: 1.5;
+    color: rgb(125, 124, 124);
+    font-weight: 600;
+}
+.mess_rate {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+.mess_rate .review {
+    padding-left: 10px;
+    padding-top: 5px;
+    font-size: .8rem;
+    color: rgb(185, 185, 185);
+}
+.card .css-ir2x1k {
+    user-select: none;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    fill: currentcolor;
+    flex-shrink: 0;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-size: 1.5rem;
+    color: rgb(248, 184, 78);
+    margin-bottom: 10px;
+}
+.mess_time {
+    margin-bottom: 5vh;
+}
+.mess_time .time {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+.mess_more {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.mess_more .mess_price p {
+    margin: 0px;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: rgb(140, 140, 140);
+}
+
+.mess_more .mess_price h1 {
+    margin: 0px;
+    font-size: 1.5rem;
+    line-height: 3;
+    font-weight: 700;
+    display: flex;
+    -webkit-box-align: baseline;
+    align-items: baseline;
+}
+.mess_link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.btn, .btn2 {
+    padding: 14px 25px;
+    border-radius: 15px;
+}

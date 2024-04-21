@@ -1,0 +1,148 @@
+
+
+.navbar {
+    padding: 20px 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    width: 150px;
+}
+
+.navbar .navbar_menu {
+    display: flex;
+    gap: 20px;
+    color: #49557e;
+    font-size: 18px;    
+    transition: .3s;
+
+}
+
+.navbar .navbar_menu li {
+    cursor: pointer;
+}
+
+.navbar .navbar_right {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.navbar button {
+    background: transparent;
+    font-size: 16px;
+    color: #49557e;
+    border: 1px solid tomato;
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.navbar button:hover {
+    background-color: #fff4f2;
+}
+
+.navbar .active {
+    padding-bottom: 2px;
+    border-bottom: 2px solid #49557e;
+}
+
+.navbar .menu_btn {
+    display: none;
+    font-size: 35px;
+}
+.menuActive {
+    transform: translateX(0) !important;
+}
+.navbar_menu p {
+    display: none;
+    font-size: 35px;
+}
+
+@media (max-width: 1050px) {
+    .navbar .logo {
+        width: 140px;
+    }
+    .navbar .navbar_menu {
+        gap: 20px;
+        font-size: 17px;
+    }
+    .navbar .navbar_right {
+        gap: 30px;
+    }
+    .navbar_right img {
+        width: 22px;
+    }
+    .navbar button {
+        padding: 8px 25px;
+    }
+}
+
+@media (max-width: 900px) {
+    .navbar .logo {
+        width: 120px;
+    }
+    .navbar .navbar_menu {
+        gap: 15px;
+        font-size: 16px;
+    }
+    .navbar .navbar_right {
+        gap: 20px;
+    }
+    .navbar_right img {
+        width: 20px;
+    }
+    .navbar button {
+        padding: 7px 20px;
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 750px) {
+    .navbar {
+        padding: 20px 0vw;
+    }
+    .navbar .navbar_menu {
+        position: absolute;
+        display: block;
+        width: 100%;
+        top: 0;
+        transform: translateX(-100%);
+        padding: 20px 20px 20px;
+        background: white;
+    }
+    .navbar .navbar_menu li {
+        padding: 20px 0;
+    }
+
+    .navbar .menu_btn {
+        display: block;
+    }
+
+    
+    .navbar_menu p {
+        display: block;
+        position: absolute;
+        top: 10%;
+        right: 20px;
+    }
+    
+}
+
+
+@media (max-width: 450px) {
+    .navbar .logo {
+        width: 110px;
+    }
+    .navbar button {
+        padding: 5px 18px;
+        font-size: 14px;
+    }
+    .navbar .menu_btn {
+        font-size: 28px;
+    }
+}
