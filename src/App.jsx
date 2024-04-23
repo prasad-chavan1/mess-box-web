@@ -22,7 +22,7 @@ function App() {
           {/* <div className="background"> */}
             <Header setShowLogin={setShowLogin} />
             <Home />
-            {/* <Footer /> */}
+            <Footer />
           {/* </div> */}
         </>
       )
@@ -31,6 +31,8 @@ function App() {
       path: "/about",
       element: (
         <>
+          {showLogin?<Login setShowLogin={setShowLogin} /> : <></>}
+          <Header setShowLogin={setShowLogin} />
           <About />
           <Footer />
         </>
@@ -38,24 +40,24 @@ function App() {
     },
     {
       path: "/addMess",
-      element: <AddMess />
+      element: 
+        <>
+          {showLogin?<Login setShowLogin={setShowLogin} /> : <></>}
+          <Header setShowLogin={setShowLogin} />
+          <AddMess />
+          <Footer />
+        </>
     },
     {
       path: "/locateMess",
       element: (
         <>
+          {showLogin?<Login setShowLogin={setShowLogin} /> : <></>}
+          <Header setShowLogin={setShowLogin} />
           <LocateMess />
           <Footer />
         </>
       )
-    },
-    {
-      path: "/login",
-      element: <Login />      
-    },
-    {
-      path: "/register",
-      element: <Register />      
     }
   ]);
 

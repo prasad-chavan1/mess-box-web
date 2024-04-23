@@ -1,50 +1,8 @@
-.navbar_srtip {
-    width: 100vw;
-    background-color: #000;
-}
-.navbar_srtip p {
-    padding: 10px;
-    color: white;
-    text-align: center;
-    font-size: 1.3rem;
-}
-.navbar_srtip p span {
-    color: orange;
-}
-
-.navbar {
-    padding: 10px 1vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.navbar .a_link {
-    width: 70px;
-}
-.navbar .navbar_items {
-    display: flex;
-    justify-content: end;
-    gap: 20px;
-}
-.navbar_items ul {
-    display: flex;
-    justify-content: space-evenly;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
-.navbar_items ul .nav_link {
-    color: white;
-}
-.navbar_items ul .nav_link:hover {
-    color: #f6cb00;
-}
-
-
-
 
 /* main code */
+.locateMess_content {
+    margin-top: 2vw;
+}
 .locateMess_content .path {
     padding: 1rem 0 2rem 2rem;
 }

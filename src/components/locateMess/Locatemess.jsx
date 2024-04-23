@@ -5,15 +5,6 @@ import './locatemess.css'
 function Locatemess() {
   return (
     <>
-      <div className="navbar_srtip">
-        <p>Introducing <span>OnlyMess Treats</span>, treat yourself with delighful recipes</p>
-      </div>
-      <div className="navbar">
-        <Link to="/" className="a_link"><img src={logoSvg} alt="" /></Link>
-        <div className="navbar_items">
-          <Link to="/" className="btn">Login</Link>
-        </div>
-      </div>
       <div className="locateMess_content">
         <p className="path">
           <Link to="/" className="a_link">Home / </Link><Link to="/locateMess" className="a_link active">Locate Mess</Link>

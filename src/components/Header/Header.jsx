@@ -10,12 +10,22 @@ function Header({setShowLogin}) {
   return (
     <header>
         <div className="navbar">
+            <Link to="/">
             <img src={logo} alt="" className="logo" />
+            </Link>
             <ul className={"navbar_menu " + (menuActive && " menuActive")}>
-                <li onClick={()=>setMenu("home")} className={menu=="home" ? "active" : ""}>home</li>
-                <li onClick={()=>setMenu("locate-mess")} className={menu=="locate-mess" ? "active" : ""}>locate mess</li>
-                <li onClick={()=>setMenu("add-mess")} className={menu=="add-mess" ? "active" : ""}>add mess</li>
-                <li onClick={()=>setMenu("about-us")} className={menu=="about-us" ? "active" : ""}>about us</li>
+                <Link to="/" className="ah_link">
+                    <li onClick={()=>setMenu("home")} className={menu=="home" ? "active" : ""}>home</li>
+                </Link>
+                <Link to="/locateMess" className="ah_link">
+                    <li onClick={()=>setMenu("locate-mess")} className={menu=="locate-mess" ? "active" : ""}>locate mess</li>
+                </Link>
+                <Link to="/addMess" className="ah_link">
+                    <li onClick={()=>setMenu("add-mess")} className={menu=="add-mess" ? "active" : ""}>add mess</li>
+                </Link>
+                <Link to="/about" className="ah_link">
+                    <li onClick={()=>setMenu("about-us")} className={menu=="about-us" ? "active" : ""}>about us</li>
+                </Link>
                 <p onClick={()=>setMenuActive(false)}><i class='bx bx-x'></i></p>
             </ul>
             <div className="navbar_right">

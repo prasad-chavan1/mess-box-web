@@ -20,6 +20,9 @@
 
 }
 
+.navbar .ah_link {
+    color: #49557e;
+}
 .navbar .navbar_menu li {
     cursor: pointer;
 }

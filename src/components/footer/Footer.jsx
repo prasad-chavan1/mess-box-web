@@ -1,33 +1,38 @@
 import React from 'react'
-import logo from '../../assets/logo_svg.svg'
+import logo from '../../assets/logo.png'
 import './footer.css'
+import { Link } from 'react-router-dom'
 function Footer() {
   return (
     <div className="footer">
-        <div className="footer_content">
-            <div className="footer_logo">
-                <img src={logo} alt="" /><br />
-                <a href="/">queries.onlymess.in</a>
-            </div>
-            <div className="footer_links">
-                <div className="social">
-                    <h1>Socials</h1>
-                    <ul>
-                        <p><i class='bx bxl-instagram'></i> <a href="/"> Instagram</a></p>
-                        <p><i class='bx bxl-twitter'></i> <a href="/"> Twitter</a></p>
-                        <p><i class='bx bxl-linkedin'></i> <a href="/"> LinkedIn</a></p>
-                    </ul>
-                </div>
-                <div className="pages">
-                    <h1>Pages</h1>
-                    <ul>
-                    <a href="/">Login</a>
-                    <a href="/">Register</a>
-                    <a href="/">Ablut Us</a>
-                    </ul>
-                </div>
-            </div>
+      <div className="footer_content">
+        <div className="footer_title">
+          <div className="hr_line2"></div>
+          <img src={logo} alt="" />
+          <div className="hr_line2"></div>
         </div>
+        <div className="footer_info">
+          <div className="footer_links">
+            <ul>
+              <li><Link to="/" className="af_link">Privacy policy</Link></li>
+              <li><Link to="/" className="af_link">Terms & condition</Link></li>
+              <li><Link to="/" className="af_link">About</Link></li>  
+            </ul>
+          </div>
+          <div className="footer_social">
+            <Link to="/" target='_blank'><i class='bx bxl-twitter'></i></Link>
+            <Link to="/" target='_blank'><i class='bx bxl-instagram'></i></Link>
+            <Link to="/" target='_blank'><i class='bx bxl-linkedin'></i></Link>
+          </div>
+          <div className="footer_links">
+            <ul>
+              <li><Link to="/" className="af_link">Privacy policy</Link></li>
+              <li><Link to="/" className="af_link">Terms & condition</Link></li>
+              <li><Link to="/" className="af_link">Contact</Link></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
